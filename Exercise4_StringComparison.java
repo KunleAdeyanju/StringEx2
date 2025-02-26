@@ -19,6 +19,23 @@ public class Exercise4_StringComparison {
         
         // TODO: Compare the strings using equals() and equalsIgnoreCase()
         // and print whether they are equal or not in both cases
+
+        // checking if the strings are equal and
+        // formatting the output for situation when case matters
+        if(str1.equals(str2)){
+            System.out.println("The Strings are equal");
+        }else {
+            System.out.println("The Strings are not equal");
+        }
+
+        // checking if the strings are equal and
+        // formatting the output for situation when case doesn't matter
+        if(str1.equalsIgnoreCase(str2)){
+            System.out.println("The Strings are equal");
+        }else {
+            System.out.println("The Strings are not equal");
+        }
+
         
         scanner.close();
     }

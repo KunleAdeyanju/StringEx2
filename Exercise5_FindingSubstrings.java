@@ -18,6 +18,13 @@ public class Exercise5_FindingSubstrings {
         
         // TODO: Check if the word appears in the sentence using contains()
         // or indexOf() methods
+
+        int quickPos = sentence.indexOf(word);
+        if(quickPos >= 0){
+            System.out.println("The word '" + word + "' was found in the sentence");
+        }else {
+            System.out.println("The word /'" + word + "/' was not found in the sentence");
+        }
         
         scanner.close();
     }
