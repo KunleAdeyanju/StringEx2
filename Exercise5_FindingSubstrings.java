@@ -23,7 +23,7 @@ public class Exercise5_FindingSubstrings {
         if(quickPos >= 0){
             System.out.println("The word '" + word + "' was found in the sentence");
         }else {
-            System.out.println("The word /'" + word + "/' was not found in the sentence");
+            System.out.println("The word '" + word + "' was not found in the sentence");
         }
         
         scanner.close();

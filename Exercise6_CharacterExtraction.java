@@ -16,6 +16,25 @@ public class Exercise6_CharacterExtraction {
         String word = scanner.nextLine();
         
         // TODO: Extract and print the first, last, and middle character(s)
+
+        // formatting the output for the 1st and last characters
+        int stringLength = word.length() - 1;
+        System.out.println("First Character: " + word.charAt(0));
+        System.out.println("Last character: " + word.charAt(stringLength));
+
+        // initializing the variable for use to keep code clean
+        int wordLength = word.length();
+        int oddMiddle = (word.length()-1)/2;
+        int evenMiddleLeft = (word.length()-2)/2;
+        int evenMiddleRight = word.length()/2;
+
+        // setting conditional to handle odd and even numbered string lengths
+        if(wordLength%2 == 1){
+            System.out.println("Middle Character: " + word.charAt(oddMiddle));
+        }else{
+            System.out.println("Middle Characters are: " + word.charAt(evenMiddleLeft) + word.charAt(evenMiddleRight));
+        }
+
         
         scanner.close();
     }
