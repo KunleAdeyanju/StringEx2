@@ -14,6 +14,11 @@ public class Exercise7_StringReversal {
         String input = scanner.nextLine();
         
         // TODO: Create and print the reversed string
+        StringBuilder newInput = new StringBuilder(input);
+        String reversed = newInput.reverse().toString();
+
+        System.out.println("Reversed string: " + reversed);
+
         
         scanner.close();
     }
