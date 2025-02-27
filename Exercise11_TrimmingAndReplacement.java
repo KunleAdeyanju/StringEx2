@@ -15,6 +15,13 @@ public class Exercise11_TrimmingAndReplacement {
         String sentence = scanner.nextLine();
         
         // TODO: Trim the sentence and replace all "and" with "&"
+
+        // creating new variable to help with efficiency
+        String sentenceModified1 = sentence.trim();
+        String sentenceModified2 = sentenceModified1.replaceAll("and","&");
+
+        // formatting the output
+        System.out.println("Processed sentence: \"" + sentenceModified2 + "\"");
         
         scanner.close();
     }
